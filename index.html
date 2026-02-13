@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML5 Page</title>
+
+    <!-- Embedded CSS -->
+    <style>
+/* General Page Styling */
+body {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: flex-start;   /* start from top */
+    min-height: 100vh;         /* full viewport height */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient background for a vibrant anime feel */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container to hold all content */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px; /* Slightly more rounded for a modern look */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Enhanced shadow */
+    border: 2px solid #e0e0e0; /* Subtle border */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4); /* Colorful gradient for title */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    font-size: 2.5em; /* Larger for emphasis */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: -10px;   /* pulls it closer to the title */
+    font-size: 18px;
+    color: #555; /* Slightly darker for contrast */
+    font-style: italic;
+}
+
+h2 {
+    color: #2e86ab; /* Teal color for subheadings */
+    margin-top: 30px;
+    border-bottom: 3px solid #f39c12; /* Orange accent border */
+    padding-bottom: 5px;
+    font-size: 1.8em;
+}
+
+/* Lists */
+ul, ol {
+    max-width: 800px;
+    background-color: #f0f8ff; /* Light blue background for lists */
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db; /* Blue accent border */
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+    color: #34495e; /* Dark text for readability */
+}
+
+/* Links */
+a {
+    color: #e74c3c; /* Keep red for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+a:hover {
+    color: #c0392b; /* Darker red on hover */
+    text-decoration: underline;
+}
+
+/* Images in a row */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Slightly more gap */
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.image-row img {
+    width: 200px;          /* fixed width */
+    height: 200px;         /* fixed height */
+    object-fit: contain;   /* keeps the logo proportion inside the box */
+    border-radius: 10px; /* More rounded */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.image-row img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* For rounded corners */
+}
+
+th {
+    background: linear-gradient(45deg, #2c3e50, #34495e); /* Gradient header */
+    color: #ffffff;
+    padding: 12px;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+tr:nth-child(even) {
+    background-color: #ecf0f1; /* Light gray for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Slightly different for odd rows */
+}
+
+tr:hover {
+    background-color: #d5dbdb; /* Highlight on hover */
+}
+    </style>
+
+    <!-- JavaScript Alert -->
+    <script>
+        alert("Hello World");
+    </script>
+</head>
+
+    <body>
+    <div class="container">
+
+        <!-- All your current content goes here -->
+
+    <!-- This is an HTML comment -->
+
+   <h1>Welcome to Anime World</h1>
+<p class="subtitle">This Page contains my Favorite Anime of All Time</p>
+
+    <!-- Unordered List -->
+    <h2>My Favorite Anime</h2>
+    <ul>
+        <li>That Time I Got Reincarnated as a Slime</li>
+        <li>Kuma Kuma Kuma</li>
+        <li>From Bureaucrat to Villainess: Dad's Been Reincarnated!</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Sites or Applications to Watch Anime</h2>
+    <ol>
+        <li>Facebook</li>
+        <li>Funimation</li>
+        <li>YouTube</li>
+    </ol>
+
+    <!-- Hyperlink -->
+    <p>
+        Visit <a href="https://www.youtube.com" target="_blank">YouTube</a> (Muse Asia & Ani-One)
+    </p>
+
+    <!-- Image -->
+   <h2>Logo of the Sites or Applications to Watch Anime</h2>
+<div class="image-row">
+  <a href="https://www.facebook.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="100">
+  </a>
+  <a href="https://www.youtube.com" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="100">
+  </a>
+  <a href="https://www.funimation.com" target="_blank">
+    <img src="data:image/png;base64,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" alt="Funimation" width="100">
+  </a>
+</div>
+
+ 
+
+    <!-- Table -->
+<h2>Student Information of a Fellow Anime Lover</h2>
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Year Level</th>
+    </tr>
+    <tr>
+        <td>Aiko Tanaka</td>
+        <td>BS Information Technology</td>
+        <td>2nd Year</td>
+    </tr>
+    <tr>
+        <td>Kenta Yamamoto</td>
+        <td>BS Computer Science</td>
+        <td>1st Year</td>
+    </tr>
+     <tr>
+        <td>Zion Ichiro</td>
+        <td>BS Secondary Education</td>
+        <td>3rd Year</td>
+    </tr>
+    
+</table>
+
+
+</body>
+</html>
